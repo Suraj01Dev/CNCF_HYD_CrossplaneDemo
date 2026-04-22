@@ -1,0 +1,9 @@
+apiVersion: example.crossplane.io/v1
+kind: XBuckets
+metadata:
+  name: example-buckets
+spec:
+  region: us-east-2
+  names:
+  - chennaipy-functions-example-a
+ 
