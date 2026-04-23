@@ -3,7 +3,7 @@ kind: XBuckets
 metadata:
   name: example-buckets
 spec:
-  region: us-east-2
+  region: us-east-1
   names:
-  - chennaipy-functions-example-a
- 
+  - cncfhyd-function-bucket-1
+  - cncfhyd-function-bucket-2

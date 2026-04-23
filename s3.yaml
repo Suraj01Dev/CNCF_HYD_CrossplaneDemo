@@ -1,0 +1,10 @@
+apiVersion: s3.aws.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: cncf-hyd-bucket-668a59b4c
+  labels:
+      app.kubernetes.io/name: cncf-hyd-bucket-668a59b4c
+spec:
+  forProvider:
+    objectLockEnabled: true
+    region: us-east-1

@@ -1,0 +1,6 @@
+apiVersion: pkg.crossplane.io/v1
+kind: Function
+metadata:
+  name: function-xbuckets
+spec:
+  package: docker.io/suraj01dev/function-xbuckets:v0.4.0 
