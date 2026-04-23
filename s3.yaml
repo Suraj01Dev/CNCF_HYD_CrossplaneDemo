@@ -8,3 +8,4 @@ spec:
   forProvider:
     objectLockEnabled: true
     region: us-east-1
+
