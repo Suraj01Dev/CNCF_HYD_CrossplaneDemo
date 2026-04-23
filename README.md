@@ -107,3 +107,34 @@ kubectl apply -f provider-config-aws.yaml
 ```
 
 Now Crossplane is installed and configured to manage AWS S3 resources!
+
+## Creating an S3 Bucket
+
+With the provider configured, you can now provision an S3 bucket by applying the `S3.yaml` manifest.
+
+Review the `S3.yaml` file:
+
+```yaml
+apiVersion: s3.aws.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: cncf-hyd-bucket-xxxxxxx
+  labels:
+      app.kubernetes.io/name: cncf-hyd-bucket-xxxxxxx
+spec:
+  forProvider:
+    objectLockEnabled: true
+    region: us-east-1
+```
+
+Apply it to your cluster to create the bucket in AWS:
+
+```bash
+kubectl apply -f S3.yaml
+```
+
+Check the status of your bucket:
+
+```bash
+kubectl get buckets
+```
