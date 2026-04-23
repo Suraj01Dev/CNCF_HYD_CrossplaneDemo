@@ -138,3 +138,10 @@ Check the status of your bucket:
 ```bash
 kubectl get buckets
 ```
+
+## References
+
+- [AWS S3 Bucket Resource (Upbound Marketplace)](https://marketplace.upbound.io/providers/upbound/provider-aws-s3/v1.0.0/resources/s3.aws.upbound.io/Bucket/v1beta1)
+- [AWS Route53 Record Resource (Upbound Marketplace)](https://marketplace.upbound.io/providers/upbound/provider-aws-route53/v2.5.3/resources/route53.aws.m.upbound.io/Record/v1beta1)
+- [AWS CloudFront Distribution Resource (Upbound Marketplace)](https://marketplace.upbound.io/providers/upbound/provider-aws-cloudfront/v2.5.3/resources/cloudfront.aws.m.upbound.io/Distribution/v1beta1)
+- [Write a Composition Function in Python (Crossplane Docs)](https://docs.crossplane.io/latest/guides/write-a-composition-function-in-python/)
